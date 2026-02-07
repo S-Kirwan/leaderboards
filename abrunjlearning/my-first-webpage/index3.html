@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <div id="app"></div>
+	<!-- Below allowing us to do declarative coding (over imperative coding)
+	- ie order the pizza, not how to make the pizza
+	React and ReactDOM Scripts - so not manipulating DOM directly, but using React to do it for us -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel Script - so we can use JSX, which is a syntax extension to JavaScript that looks
+	 similar to HTML, and is used in React to describe what the UI should look like -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      const app = document.getElementById('app');
+
+	  function Header()
+	{
+		return (<h1>Project PingPong</h1>);
+	  }
+      const root = ReactDOM.createRoot(app);
+      root.render(<Header />);
+    </script>
+  </body>
+</html>
